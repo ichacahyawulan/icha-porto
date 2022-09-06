@@ -96,7 +96,7 @@
           <v-text class="font-weight-regular subtitle-1"><strong>Desc: </strong> {{details[itemID].desc}}</v-text>
           <br />
           <br />
-          <v-text class="subtitle-1">My Contribution:</v-text>
+          <v-text class="subtitle-1"><strong>My Contribution:</strong></v-text>
           <v-text v-html="details[itemID].contribution"></v-text>
         </v-card-text>
         <div class="text-center">
@@ -153,7 +153,7 @@ export default {
             require("@/assets/img/picVoyagee5.png"),
             require("@/assets/img/picVoyagee6.png"),
           ],
-          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste explicabo commodi quisquam asperiores dolore ad enim provident veniam perferendis voluptate, perspiciatis.",
+          desc: "A simple website that provides travel-related news. Users can save news and also share news on social media. There are several news categories that can make it easier for users to choose which news to read.",
           contribution: `
             <ul>
               <li>Create a login and sign-up page.</li>
@@ -178,7 +178,7 @@ export default {
             require("@/assets/img/picMonitoring7.png"),
             require("@/assets/img/picMonitoring8.png"),
           ],
-          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste explicabo commodi quisquam asperiores dolore ad enim provident veniam perferendis voluptate, perspiciatis.",
+          desc: "A monitoring system on the campus academic website helps monitor the progress of student assignments. There are several features for both lecturers and students. Lecturers can add tasks and see the progress of each student's work. Meanwhile, students can keep track of the progress of the tasks given by the lecturer.",
           contribution: `
             <ul>
               <li>Led the monitoring team.</li>
@@ -216,10 +216,10 @@ export default {
             require("@/assets/img/picMap21.png"),
             require("@/assets/img/picMap22.png")
           ],
-          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste explicabo commodi quisquam asperiores dolore ad enim provident veniam perferendis voluptate, perspiciatis.",
+          desc: "A map component is used in an information system to visualize various data. The data displayed include regional boundaries, weather, and aircraft position movements.",
           contribution: `
             <ul>
-              <li>Create interactive maps that can display various information such as regional boundaries, weather, and aircraft position movements.</li>
+              <li>Create interactive maps that can display various information.</li>
               <li>Create a sidebar component containing selectable information to display on the map.</li>
               <li>Tools used: <strong>React, Redux, Bootstrap, LeafletJS, Socket.IO, PostgreSQL, PostGIS, QGIS, GeoServer.</strong></li>
             </ul>
@@ -230,7 +230,7 @@ export default {
             require("@/assets/img/picMapTA.png"),
             require("@/assets/img/picMapTA1.png")
           ],
-          desc: "Final Project titled Analysis of Grid-based Selection Implementation in Data Visualization for Vessel Position Monitoring on Maps",
+          desc: "Analysis of Grid-based Selection Implementation in Data Visualization for Vessel Position Monitoring on Maps is the title of the final project. The study was carried out to analyze methods for improving the performance of data visualization on maps.",
           contribution: `
             <ul>
               <li>Perform research to find the most effective approach.</li>
