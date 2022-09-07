@@ -17,7 +17,7 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>Icha Cahya Wulan</strong> | Designed by Joabson Arley (Calango WEB)
+        {{ new Date().getFullYear() }} — <strong>Icha Cahya Wulan</strong> | Designed by Joabson Arley
       </v-card-text>
     </v-card>
   </v-footer>

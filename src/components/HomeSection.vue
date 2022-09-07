@@ -17,7 +17,7 @@
                 outlined
                 large
                 dark
-                href="https://drive.google.com/file/d/1AySNRP5YdxA3XNghPcuS1KRgowvcj1b7/view?usp=sharing"
+                href="https://bit.ly/cv_ichacw"
                 target="_blank"
                 class="mt-5"
               >
@@ -48,13 +48,6 @@
               v-for="(feature, i) in features"
               :key="i"
             >
-              <!-- <v-hover v-slot:default="{ hover }"> -->
-                <!-- <v-card
-                  class="card"
-                  shaped
-                  :elevation="hover ? 10 : 4"
-                  :class="{ up: hover }"
-                > -->
                 <v-tooltip right>
                   <template v-slot:activator="{ on, attrs }">
                     <v-img
@@ -68,24 +61,11 @@
                   </template>
                   <span>{{ feature.title }}</span>
                 </v-tooltip>
-                  
-                  <!-- <h1 class="font-weight-regular">{{ feature.title }}</h1>
-                </v-card>
-              </v-hover> -->
             </v-col>
           </v-row>
         </v-col>
       </v-row>
     </v-container>
-    <v-dialog v-model="dialog" max-width="640px">
-      <v-card>
-        <youtube
-          :video-id="videoId"
-          @ready="ready"
-          @playing="playing"
-        ></youtube>
-      </v-card>
-    </v-dialog>
     <div class="svg-border-waves">
       <img src="~@/assets/img/wave2.svg" />
     </div>
@@ -96,8 +76,6 @@
 export default {
   data() {
     return {
-      dialog: false,
-      videoId: "i8IvvHJssWE",
       features: [
         {
           img: require("@/assets/img/logo_vue.png"),
@@ -137,35 +115,7 @@ export default {
         },
       ],
     };
-  },
-  watch: {
-    dialog(value) {
-      if (!value) {
-        this.pause();
-      }
-    },
-  },
-  methods: {
-    ready(event) {
-      this.player = event.target;
-    },
-    playing(event) {
-      // The player is playing a video.
-    },
-    change() {
-      // when you change the value, the player will also change.
-      // If you would like to change `playerVars`, please change it before you change `videoId`.
-      // If `playerVars.autoplay` is 1, `loadVideoById` will be called.
-      // If `playerVars.autoplay` is 0, `cueVideoById` will be called.
-      this.videoId = "another video id";
-    },
-    stop() {
-      this.player.stopVideo();
-    },
-    pause() {
-      this.player.pauseVideo();
-    },
-  },
+  }
 };
 </script>
 
@@ -190,30 +140,6 @@ export default {
   width: 100%;
   margin-bottom: -2px;
   z-index: -1;
-}
-
-.card {
-  min-height: 300px;
-  padding: 10px;
-  transition: 0.5s ease-out;
-}
-
-.card .v-image {
-  margin-bottom: 15px;
-  transition: 0.75s;
-}
-
-.card h1 {
-  margin-bottom: 10px;
-}
-
-.zoom-efect {
-  transform: scale(1.1);
-}
-
-.up {
-  transform: translateY(-20px);
-  transition: 0.5s ease-out;
 }
 </style>
 
