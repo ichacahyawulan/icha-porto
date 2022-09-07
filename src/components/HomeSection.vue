@@ -17,7 +17,8 @@
                 outlined
                 large
                 dark
-                @click="$vuetify.goTo('#tools')"
+                href="https://drive.google.com/file/d/1AySNRP5YdxA3XNghPcuS1KRgowvcj1b7/view?usp=sharing"
+                target="_blank"
                 class="mt-5"
               >
                 View My CV

@@ -45,7 +45,7 @@
       :color="color"
       :flat="flat"
       dark
-      class="px-15"
+      class="px-5"
       :class="{ expand: flat }"
     >
       <v-toolbar-title>
@@ -54,7 +54,6 @@
       <v-spacer />
       <v-app-bar-nav-icon
         @click.stop="drawer = !drawer"
-        class="mr-4"
         v-if="isXs"
       />
       <div v-else>
