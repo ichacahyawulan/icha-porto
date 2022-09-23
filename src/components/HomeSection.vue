@@ -17,7 +17,7 @@
                 outlined
                 large
                 dark
-                href="https://bit.ly/cv_ichacw"
+                href="https://drive.google.com/file/d/108CASEWKL6_nO7r7otMgKILogBbMmdZN/view?usp=sharing"
                 target="_blank"
                 class="mt-5"
               >
